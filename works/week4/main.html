@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анна Schneider - Портфолио</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p class="logo"><a href="#">Резюме</a></p>
+        <ul class="nav-links">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#plan">План обучения</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <button class="contact-btn">Let's Talk</button>
+      </nav>
+    </header>
+
+    <!-- Секция "Обо мне" -->
+    <section id="about">
+      <div class="intro-text">
+        <h1>Привет! Я Анна -</h1>
+        <h2>опытный разработчик на Delphi</h2>
+        <p>
+          В последнее время я активно изучаю фронтенд-технологии, такие как
+          HTML, CSS, и JavaScript и Vue.js. Моя цель — стать Full-Stack
+          разработчиком и интегрировать новые знания с уже имеющимся опытом.
+        </p>
+        <a href="#contact" class="btn">Связаться со мной</a>
+        <a href="#" class="btn">Скачать резюме</a>
+      </div>
+      <div class="intro-image">
+        <img src="myfoto.png" alt="фотография" />
+      </div>
+    </section>
+
+    <!-- Секция "План обучения" -->
+    <section id="education-plan">
+      <h2>План обучения</h2>
+      <p>или засучим рукава</p>
+
+      <div class="modules">
+        <div class="module">
+          <h3>Модуль 1. HTML, CSS</h3>
+          <p>
+            Основы HTML, CSS, Flexbox, Grid, адаптивный дизайн, проект лендинг.
+          </p>
+        </div>
+        <div class="divider"></div>
+        <div class="module">
+          <h3>Модуль 2. JavaScript</h3>
+          <p>
+            Основы JavaScript, управление DOM, асинхронность, API, события и
+            формы, проект интерфейс.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция "Навыки" -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>что живет в моей голове.</p>
+
+      <div class="skills-container">
+        <div class="skill">
+          <img src="assets/image/html1.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <img src="assets/image/html2.png" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <img src="assets/image/html3.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <img src="assets/image/html4.png" alt="Delphi" />
+          <p>Delphi</p>
+        </div>
+        <div class="skill">
+          <img src="assets/image/html5.png" alt="React JS" />
+          <p>React JS</p>
+        </div>
+        <div class="skill">
+          <img src="assets/image/html6.png" alt="Figma" />
+          <p>Figma</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция "Контакт" -->
+    <section id="contact">
+      <h2>Контакт</h2>
+      <p>Тебе есть что сказать? Пиши!</p>
+
+      <div class="contact-container">
+        <div class="contact-image">
+          <img src="assets/image/img-form1.png" alt="Контакт" />
+        </div>
+        <div class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Имя и Фамилия</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Е-Майл</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Текст</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Интересно? Подписывайся!</p>
+        <div class="social-icons">
+          <a href="#"
+            ><img src="assets/image/facecbook.png" alt="Facebook"
+          /></a>
+          <a href="#"><img src="assets/image/instagram.png" alt="Twitter" /></a>
+        </div>
+      </div>
+      <p class="footer-copyright">
+        © 2024 Anna Schneider<br />All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

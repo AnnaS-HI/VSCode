@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Киносайт</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .block img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 30px; /* Добавляем больше отступа после заголовка */
+      }
+      .actor-name {
+        text-align: center;
+        margin-top: 10px; /* Отступ для имени */
+        font-weight: bold;
+      }
+      .description {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px; /* Отступ после текста */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Киносайт</h1>
+    </header>
+
+    <main class="container">
+      <!-- Первый блок: актрисы -->
+      <section aria-labelledby="top-actress">
+        <h2 id="top-actresses">
+          Актёры, которых я уважаю и люблю смотреть на экране
+        </h2>
+        <div class="block">
+          <a href="bio1.html" target="_blank">
+            <img
+              src="./assets/image/322px-Sandra_Bullock_2010.jpg"
+              alt="Sandra Bullock"
+            />
+            <p class="actor-name">Сандра Буллок</p>
+          </a>
+          <a href="bio2.html" target="_blank">
+            <img
+              src="./assets/image/426px-Vin_Diesel_by_Gage_Skidmore_2.jpg"
+              alt="Вин Дизель"
+            />
+            <p class="actor-name">Вин Дизель</p>
+          </a>
+          <a href="bio3.html" target="_blank">
+            <img
+              src="./assets/image/360px-Press_conference_of_Natalia_Oreiro_(2018-06-05)_07_(cropped).jpg"
+              alt="Наталья Орейро"
+            />
+            <p class="actor-name">Наталья Орейро</p>
+          </a>
+          <a href="bio4.html" target="_blank">
+            <img
+              src="./assets/image/361px-Ms._magazine_Cover_-_Winter_2015.jpg"
+              alt="Анжелина Джоли"
+            />
+            <p class="actor-name">Анжелина Джоли</p>
+          </a>
+          <a href="bio5.html" target="_blank">
+            <img
+              src="./assets/image/379px-Henry_Cavill_by_Gage_Skidmore_2.jpg"
+              alt="Генри Кавилл"
+            />
+            <p class="actor-name">Генри Кавилл</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Второй блок: фильмы -->
+      <section aria-labelledby="top-roles">
+        <h2 id="top-roles">Лучшие роли</h2>
+        <p class="description">
+          Вот роли, за которые я полюбила этих актёров: Сандра Буллок —
+          "Скорость", Вин Дизель — "Хроники Риддика", Наталья Орейро — "Дикий
+          ангел", Анжелина Джоли — "Мистер и миссис Смит", Генри Кавилл —
+          "Тюдоры".
+        </p>
+        <div class="block">
+          <a href="film1.html" target="_blank">
+            <img src="./assets/image/1147994.jpg" alt="Фильм 1" />
+            <p class="actor-name">Скорость</p>
+          </a>
+          <a href="film2.html" target="_blank">
+            <img
+              src="./assets/image/319px-Movie_poster_the_chronicles_of_riddick.jpg"
+              alt="Фильм 2"
+            />
+            <p class="actor-name">Хроники Риддика</p>
+          </a>
+
+          <a href="film3.html" target="_blank">
+            <img
+              src="./assets/image/Дикий_ангел_(телесериал).jpg"
+              alt="Фильм 3"
+            />
+            <p class="actor-name">Дикий ангел</p>
+          </a>
+          <a href="film4.html" target="_blank">
+            <img
+              src="./assets/image/320px-Mr_and_mrs_smith_box_s.jpg"
+              alt="Фильм 4"
+            />
+            <p class="actor-name">Мистер и миссис Смит</p>
+          </a>
+          <a href="film5.html" target="_blank">
+            <img src="./assets/image/The_Tudors.jpg" alt="Фильм 5" />
+            <p class="actor-name">Тюдоры</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Третий блок: видео -->
+      <section aria-labelledby="trailers">
+        <h2 id="trailers">Видео</h2>
+        <p class="description">
+          Это мои любимые фильмы и сериалы, которые я до сих пор с удовольствием
+          просматриваю.
+        </p>
+        <div class="block">
+          <a href="trailer1.html" target="_blank">
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/CHA9EW09R6c"
+              title="Мисс Конгениальность (2000) - Трейлер. Miss Congeniality"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </a>
+          <a href="trailer2.html" target="_blank">
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/6NKcWVxMge0"
+              title="Хроники Риддика (2004) - трейлер"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </a>
+          <a href="trailer3.html" target="_blank">
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/-rsQ00jxcpg"
+              title="Sos Mi Vida - Entrada"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </a>
+          <a href="trailer4.html" target="_blank">
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/DhXgbwTURtk"
+              title="Мистер и миссис Смит (Mr. & Mrs. Smith, 2005) - Русский Трейлер к фильму"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </a>
+          <a href="trailer5.html" target="_blank">
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/kIh3eW9j2X4"
+              title="Ведьмак (2019) — Русский трейлер (1 сезон)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Киносайт. Все права защищены.</p>
+    </footer>
+  </body>
+</html>

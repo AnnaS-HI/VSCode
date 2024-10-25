@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма для питомца</title>
+  </head>
+  <body>
+    <header
+      style="
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      "
+    >
+      <h1>Информация о питомце</h1>
+    </header>
+
+    <div style="display: flex; margin-top: 20px">
+      <aside
+        style="width: 15%; padding: 10px; border: 1px solid #ccc; height: 100vh"
+      >
+        <img src="image/pets.webp" alt="все питомцы" style="width: 100%" />
+        <img src="image/cat.webp" alt="Кошка" style="width: 100%" />
+        <img src="image/dog.webp" alt="Собака" style="width: 100%" />
+        <img src="image/parrot.webp" alt="Попугай" style="width: 100%" />
+        <img src="image/hamster.webp" alt="Хомяк" style="width: 100%" />
+      </aside>
+
+      <div style="width: 70%; padding: 20px">
+        <form>
+          <div style="padding: 10px">
+            <label for="breed">Вид питомца:</label>
+            <select id="breed" name="breed">
+              <option value="1">Собака</option>
+              <option value="2">Кошка</option>
+              <option value="3">Попугай</option>
+              <option value="4">Хомяк</option>
+            </select>
+          </div>
+
+          <div style="padding: 10px">
+            <label for="pet-name">Кличка питомца:</label>
+            <input type="text" id="pet-name" name="pet-name" required />
+          </div>
+
+          <div style="padding: 10px">
+            <label>Чем питается:</label>
+            <input
+              type="checkbox"
+              id="dry-food"
+              name="food"
+              value="Сухой корм"
+            />
+            <label for="dry-food">Сухой корм</label>
+
+            <input
+              type="checkbox"
+              id="wet-food"
+              name="food"
+              value="Влажный корм"
+            />
+            <label for="wet-food">Влажный корм</label>
+
+            <input
+              type="checkbox"
+              id="natural-food"
+              name="food"
+              value="Натуральный корм"
+            />
+            <label for="natural-food">Натуральный корм</label>
+          </div>
+
+          <div style="padding: 10px">
+            <label>Пол:</label>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="Самец"
+              required
+            />
+            <label for="male">Самец</label>
+
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Самка"
+              required
+            />
+            <label for="female">Самка</label>
+          </div>
+
+          <fieldset style="padding: 10px">
+            <legend>Информация о владельце</legend>
+
+            <div style="padding: 10px">
+              <label for="owner-name">Имя владельца:</label>
+              <input type="text" id="owner-name" name="owner-name" required />
+            </div>
+
+            <div style="padding: 10px">
+              <label for="owner-contact">Контакты владельца:</label>
+              <input
+                type="text"
+                id="owner-contact"
+                name="owner-contact"
+                required
+              />
+            </div>
+
+            <div style="padding: 10px">
+              <label for="comment">Комментарий владельца:</label>
+              <textarea
+                id="comment"
+                name="comment"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <div style="padding: 10px">
+            <label for="photo">Приложить фото питомца:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" />
+          </div>
+
+          <button style="margin-top: 20px" type="submit">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <footer
+      style="
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      "
+    >
+      <p>&copy; Мы в ответе за тех, кого приручили.</p>
+    </footer>
+  </body>
+</html>
