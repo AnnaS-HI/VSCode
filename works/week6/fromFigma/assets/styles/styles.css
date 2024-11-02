@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #28a745; /* Зеленый цвет для фона */
+  color: #ffffff; /* Белый цвет для текста */
+  padding: 10px 20px; /* Отступы */
+  border: none; /* Убираем стандартную границу */
+  border-radius: 5px; /* Закругляем углы */
+  font-size: 1rem; /* Размер шрифта */
+  font-weight: bold; /* Жирный текст */
+  cursor: pointer; /* Указываем, что это кнопка */
+  transition: background-color 0.3s, transform 0.2s; /* Плавные переходы для фона и трансформации */
+}
+
+/* Эффект при наведении */
+button:hover {
+  background-color: #218838; /* Более темный зеленый при наведении */
+  transform: translateY(-2px); /* Небольшое поднятие вверх при наведении */
+}
+
+/* Эффект при нажатии */
+button:active {
+  background-color: #1e7e34; /* Еще более темный зеленый при нажатии */
+  transform: translateY(0); /* Возвращение в исходное состояние */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "hero hero"
+    "clients clients"
+    "services services"
+    "testimonial testimonial"
+    "blog blog"
+    "footer footer";
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Пробелы между элементами списка */
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black; /* Цвет текста */
+}
+
+.hero {
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clients {
+  grid-area: clients;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Создаем 7 столбцов */
+  grid-auto-rows: minmax(
+    10px,
+    auto
+  ); /* Автоматическая высота строк с минимальной высотой 100px */
+  gap: 20px; /* Отступы между элементами */
+  justify-items: center; /* Центрируем логотипы по горизонтали */
+  align-items: center; /* Центрируем логотипы по вертикали */
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px 20px; /* Дополнительные отступы для всего раздела */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clients h2 {
+  grid-column: span 7; /* Заголовок занимает все 7 столбцов */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.clients p {
+  grid-column: span 7; /* Описание занимает все 7 столбцов */
+
+  font-size: 1rem;
+  color: #555;
+}
+
+.client-logo img {
+  width: 60px; /* Размер логотипов */
+  height: auto; /* Сохранение пропорций */
+  transition: transform 0.3s; /* Плавный эффект увеличения */
+}
+
+.client-logo img:hover {
+  transform: scale(1.1); /* Небольшое увеличение при наведении */
+}
+
+.services {
+  grid-area: services;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services p:first-of-type {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px; /* Ограничиваем ширину карточек для более компактного размещения */
+}
+
+.service-card {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  margin-bottom: 15px;
+}
+
+.service-icon .icon {
+  width: 60px;
+  height: auto;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Колонки разной ширины для визуального баланса */
+  gap: 40px; /* Увеличенное расстояние между колонками */
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 40px 20px;
+  align-items: start;
+}
+
+.footer-logo {
+  grid-column: span 1;
+}
+
+.footer-logo .logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 0.9rem;
+  color: #c4c4c4;
+}
+
+.footer-links ul,
+.footer-support ul,
+.footer-social ul {
+  list-style: none; /* Убираем стили для списка */
+  padding: 0;
+  margin: 0;
+  display: block; /* Отображаем списки как блоки для вертикального расположения элементов */
+}
+
+.footer-links li,
+.footer-support li {
+  margin-bottom: 10px; /* Добавляем отступ снизу, чтобы элементы списка не слипались */
+}
+
+.footer-links,
+.footer-support {
+  text-align: left; /* Оставляем текст выровненным слева */
+  display: block; /* Обеспечиваем вертикальное выравнивание */
+}
+
+.footer-links h4,
+.footer-support h4,
+.footer-subscribe h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.footer-links a,
+.footer-support a {
+  color: #bfbfbf;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-support a:hover {
+  color: #ffffff;
+}
+
+.footer-subscribe form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-subscribe input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.footer-subscribe button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-subscribe button:hover {
+  background-color: #0056b3;
+}
+
+.footer-social {
+  grid-column: 1 / -1; /* Социальные иконки занимают всю ширину подвала */
+  margin-top: 20px;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Центрируем социальные иконки */
+}
+
+.footer-social a {
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
