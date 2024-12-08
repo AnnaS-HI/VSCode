@@ -1,0 +1,19 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr 50%;
+}
+
+div {
+  border: 1px solid #000;
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  color: #000;
+  font-family: Menlo, "Ubuntu Mono", Consolas, source-code-pro, monospace;
+  font-size: 13px;
+}
